@@ -1,6 +1,6 @@
-package main.java;
+package com.mihov;
 
-import parser.Parser;
+import com.mihov.parser.Parser;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -59,11 +59,9 @@ public class UI extends JFrame {
     }
 
     public static void main(String[] args) {
-
-
         UI ui = new UI();
         ui.setContentPane(ui.panel);
-        ui.setTitle("Lin parser");
+        ui.setTitle("Lin main.java.com.mihov.parser");
         ui.setSize(500, 200);
         ui.setVisible(true);
         ui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

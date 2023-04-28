@@ -1,4 +1,4 @@
-package parser;
+package com.mihov.parser;
 
 import java.util.*;
 

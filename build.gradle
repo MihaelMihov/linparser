@@ -2,3 +2,13 @@ apply plugin: 'application'
 apply plugin: 'java'
 
 sourceSets.main.java.srcDirs = ['src']
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.mihov.java.com.mihov.UI"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
