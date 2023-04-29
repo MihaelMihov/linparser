@@ -1,6 +1,8 @@
 package com.mihov.parser;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class Printer {
 
@@ -13,4 +15,7 @@ public class Printer {
         printWriter.close();
     }
 
+    public static void clearFileContents() throws IOException {
+        Files.deleteIfExists(Path.of(FILE_NAME));
+    }
 }

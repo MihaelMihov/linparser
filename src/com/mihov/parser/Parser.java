@@ -5,7 +5,7 @@ import java.util.*;
 public class Parser {
 
     private static Map<String, String> dealMap = new LinkedHashMap<>();
-    private static final StringBuilder stringBuilder = new StringBuilder();
+
     private static final int TOKEN_GROUP_LENGTH = 2;
     private static final String DELIMITER = "|";
     private static final String COMMA = ",";
@@ -31,7 +31,7 @@ public class Parser {
         }
 
         List<String> tokenizedPlay = tokenizePlayAndBids(dealMap.get("p"), TOKEN_GROUP_LENGTH);
-
+        StringBuilder stringBuilder = new StringBuilder();
         String lin = stringBuilder
                 .append(PRELIMINARY)
                 .append(BOARD_HEADER)
