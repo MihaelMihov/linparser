@@ -2,7 +2,7 @@ package com.mihov.parser;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Printer {
 
@@ -16,6 +16,6 @@ public class Printer {
     }
 
     public static void clearFileContents() throws IOException {
-        Files.deleteIfExists(Path.of(FILE_NAME));
+        Files.deleteIfExists(Paths.get(FILE_NAME));
     }
 }
